@@ -1,0 +1,34 @@
+.Details {
+    margin-top: 15px;
+    font-family: 'Poppins' sans-serif;
+    background-color: hsl(228, 10%, 10%);
+    color: rgb(217, 217, 217);
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.Details h1 {
+    align-self: center;
+    margin: 7px;
+}
+.Details h2 {
+    align-self: center;
+    margin: 6px;
+}
+
+.Details img {
+    scale: 0.9;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 1.5s ease;
+    transition: transform 1.5s ease;
+}
+
+.Details img:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    transform: scale(1.05);
+}
+

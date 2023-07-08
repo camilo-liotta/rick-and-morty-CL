@@ -1,0 +1,61 @@
+.about {
+    display: flex;
+
+    flex-direction: column;
+
+    align-self: center;
+
+    margin-top: 150px;
+    
+    margin-left: 350px;
+
+    margin-right: 350px;
+
+    background-color: hsl(218, 80%, 2%);
+
+    border-bottom-right-radius: 50px;
+
+    border-top-left-radius: 75px;
+
+    padding: 50px;
+
+    padding-top: 20px;
+
+}
+
+.about h1 {
+    
+    color: hsl(116, 51%, 25%);
+    
+    letter-spacing: -1px;
+    
+    font-size: 40px;
+    
+    margin-bottom: 10px;
+
+    text-align: center;
+
+    /* margin-top: 50px; */
+
+}
+
+.about p {
+    
+    padding-left: 100px;
+    
+    padding-right: 100px;
+
+    text-align: center;
+
+    color: hsl(116, 25%, 35%);
+
+    font-weight: 700;
+
+    font-size: 18px;
+
+    line-height: 1.75;
+
+    letter-spacing: -0.3px;
+
+}
+

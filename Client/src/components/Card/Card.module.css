@@ -1,0 +1,170 @@
+.Card {
+    
+    background-color: hsl(228, 10%, 10%);
+    
+    margin: 8px;
+    
+    /* border: 2px solid rgb(54, 54, 54); */
+    
+    width: 250px;
+
+    height: 400px;
+    
+    position: relative;
+
+    font-family: 'Poppins' sans-serif;
+    
+    display: inline-block;
+    
+    box-shadow: 20px 20px 50px -19px black;
+
+    border-radius: 17px;
+
+    overflow: hidden;
+
+    transition: transform 0.2s ease;
+    
+}
+
+.Card:hover{
+    transform: scale(1.05);
+}
+
+.fav {
+
+    background-color: transparent;
+
+    border: 0px;
+
+    position: absolute;
+
+    font-size: 15px;
+
+    z-index: 3;
+
+    transform: translateY(3px);
+
+}
+
+.cardImg {
+    
+    width: 250px;
+    
+    position: relative;
+
+    transform: translateY(-10px);
+    
+    z-index: 1;
+
+    box-shadow: 20px 20px 20px -19px black;
+
+    object-fit: cover;
+
+}
+
+.cardButton {
+
+    background-color: transparent;
+
+    text-align: center;
+
+    display: flex;
+
+    font-weight: bold;
+
+    border-bottom-left-radius: 3px;
+ 
+    justify-content: center;
+ 
+    align-items: center;
+
+    border: 0px;
+    
+    position: absolute;
+
+    top: 0;
+    
+    right: 0;
+    
+    z-index: 3;
+
+    padding: 2px;
+
+}
+
+.nombre{
+    
+    background-color: hsl(0, 0%, 6%);
+
+    color: rgb(217, 217, 217);
+
+    position: relative;
+
+    z-index: 2;
+
+    line-height: 1.6;
+
+    font-size: medium;
+
+    font-weight: 700;
+
+    bottom: 13%;
+
+    padding-top: 5px;
+
+    padding-bottom: 5px;
+
+    padding-left: 4%;
+
+    padding-right: 8px;
+
+    display: inline;
+
+    border-top-right-radius: 3px;
+
+    border-bottom-right-radius: 3px;
+
+}
+
+Link {
+  
+    text-decoration: none;
+    
+    color: inherit; 
+    
+    cursor: inherit; 
+
+}
+
+.item{
+    display: flex;
+}
+
+.item h2 {
+
+    margin-bottom: 7px;
+
+    font-family: 'Poppins' sans-serif;;
+
+    color: rgb(217, 217, 217);
+
+    font-size:medium;
+
+    font-weight: 500;
+
+    transform: translateY(-30px);
+
+}
+
+.propiedad {
+    text-align: left;
+    margin-left: 6%;
+    width: 44%;
+}
+
+.selfprop {
+    text-align: right;
+    margin-right: 6%;
+    width: 43%;
+    align-self: end;
+}

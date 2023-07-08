@@ -1,0 +1,14 @@
+.material-icons {
+    color: hsl(220, 7%, 91%);
+    /* opacity: 50%; */
+    font-size: 22px;
+    opacity: 50%;
+    margin: 3px;
+}
+
+#clsBut .material-icons {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    opacity: 90%;
+    font-weight: 900;
+}

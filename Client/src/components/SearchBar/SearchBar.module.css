@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons&display=swap');
+
+.SearchBar {
+    
+    display:inline-flex;
+
+    transform: translate(340%);
+
+}
+
+.buscar {
+
+    width: 150px;
+
+    height: 35px;
+    
+    /* background-color: transparent; */
+    background-color: hsl(218, 11%, 14%);
+
+    /* border: 0.5px solid hsl(116, 61%, 25%); */
+    border: 0px;
+
+    /* color: hsl(116, 61%, 25%); */
+    color: hsl(220, 7%, 91%);
+
+    font-size: 14px;
+
+    font-weight: 400;
+
+    font-family: 'Poppins', sans-serif;
+
+    border-right: 0px;
+
+    border-top-left-radius: 20px;
+    
+    border-bottom-left-radius: 20px;
+
+    text-indent: 12px;
+
+}
+
+.buscar::placeholder{
+    /* color: hsl(116, 61%, 55%); */
+    color: hsl(220, 7%, 91%);
+    text-indent: 2px;
+    letter-spacing: 0.7px;
+    font-weight: 200;
+    opacity: 50%;
+}
+
+.buscar:focus{
+    outline: none;
+}
+
+.botones {
+
+    /* background-color: transparent; */
+    background-color: hsl(218, 11%, 14%);
+
+    transform: translate(-1px);
+
+    color: rgb(217, 217, 217);
+
+    font-weight: 500;
+
+    border-top-right-radius: 20px;
+    
+    border-bottom-right-radius: 20px;
+
+    height: 35px;
+
+    font-family: 'Roboto', sans-serif;
+
+    /* font-weight: 900; */
+
+    /* border: 0.5px solid hsl(116, 61%, 25%); */
+    border: 0px;
+
+    border-left: 0px;
+
+    /* padding: 2px 10px; */
+
+}
+
+#random {
+    position: relative;
+    /* border: 0.5px solid hsl(116, 61%, 25%); */
+    box-shadow: 5px 5px 18px -8px black;
+    background-color: hsl(116, 50%, 23%);
+    height: 37px;
+    width: 105px;
+    bottom: 2px;
+    border-radius: 20px;
+    margin-left: 25px;
+    transition: transform 1s ease;
+}
+
+#random span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Poppins', sans-serif;
+    /* color: hsl(116, 61%, 25%); */
+    color: rgb(217, 217, 217);
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    line-height: 13px;
+    font-size: 14px;
+    /* text-shadow: -1px -1px 0 rgb(72, 131, 13), 1px -1px 0 rgb(72, 131, 13), -1px 1px 0 rgb(72, 131, 13), 1px 1px 0 rgb(72, 131, 13); */
+}
+
+#random:hover {
+    transform: scale(1.05);
+    background-color: hsl(115, 49%, 15%);
+    opacity: 100%;
+
+}
