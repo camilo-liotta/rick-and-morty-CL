@@ -36,7 +36,7 @@ function Card(props) {
             )
          }
          <button id='clsBut' onClick={() => props.onClose(props.id)} className={style.cardButton}>
-            <span class="material-icons">close</span>
+            <span className="material-icons">close</span>
          </button>
          <Link to={`/details/${props.id}`}>
             <img src={props.image} alt='' className={style.cardImg} />
@@ -51,9 +51,6 @@ function Card(props) {
          <article className={style.item}>
             <h2 className={style.propiedad}>Gender</h2><h2 className={style.selfprop}>{props.gender}</h2>
          </article>
-         {/* <article className={style.item}>
-            <h2 className={style.propiedad}>Origin</h2><h2 className={style.selfprop}>{props.origin.name}</h2>
-         </article> */}
       </div>
    );
 };

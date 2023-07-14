@@ -34,16 +34,40 @@ export default function Details() {
    }
 
    
-  return (
-    <div className={style.Details}>
-        <h1>Details</h1>
-        <img src={character.image} alt={character.name} />
-        <h2>ID: {id}</h2>
-        <h2>{character.name}</h2>
-        <h2>{character.status}</h2>
-        <h2>{character.species}</h2>
-        <h2>{character.gender}</h2>
-        <h2>{character.origin?.name}</h2>
-    </div>
-  );
+return (
+   <div className={style.Details}>
+       
+      <h1>{character.name}</h1>
+   
+      <div className={style.container}>
+         <div className={style.imageContainer} >
+            <img src={character.image} alt={character.name} />
+         </div>
+
+         <div className={style.infoContainer}>
+            <article>
+            <h2 className={style.propiedad}>ID</h2><h2 className={style.selfprop}>{id}</h2>
+            </article>
+
+            <article>
+               <h2 className={style.propiedad}>Status</h2><h2 className={style.selfprop}>{character.status}</h2>
+            </article>
+
+            <article>
+               <h2 className={style.propiedad}>Species</h2><h2 className={style.selfprop}>{character.species}</h2>
+            </article>
+
+            <article>
+               <h2 className={style.propiedad}>Gender</h2><h2 className={style.selfprop}>{character.gender}</h2>
+            </article>
+            
+            <article>
+               <h2 className={style.propiedad}>Origin</h2><h2 className={style.selfprop}>{character.origin}</h2>
+            </article>
+         </div>
+      </div>
+
+
+   </div>
+);
 }

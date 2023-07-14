@@ -1,10 +1,8 @@
-.Card {
+/* .Card {
     
     background-color: hsl(228, 10%, 10%);
     
     margin: 8px;
-    
-    /* border: 2px solid rgb(54, 54, 54); */
     
     width: 250px;
 
@@ -24,10 +22,30 @@
 
     transition: transform 0.2s ease;
     
+} */
+
+.Card {
+    display: inline-block;
+    width: 250px;
+    margin: 1.5rem;
+    height: 400px;
+    overflow: hidden;
+    background: rgba( 255, 255, 255, 0 );
+    box-shadow: 0 0px 10px 0 rgba(112, 112, 112, 0.37);
+    backdrop-filter: blur( 18px );
+    -webkit-backdrop-filter: blur( 18px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 1rem;
+    z-index: 10;
+    color: whitesmoke;
+    transition: background 0.2s, box-shadow 0.5s;
+    
 }
 
 .Card:hover{
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
+    box-shadow: 0 5px 32px 0 rgba(112, 112, 112, 0.37);
+    background: rgba( 255, 255, 255, 0.05 );
 }
 
 .fav {
@@ -43,6 +61,8 @@
     z-index: 3;
 
     transform: translateY(3px);
+
+    transition: all 1s;
 
 }
 
@@ -90,6 +110,8 @@
 
     padding: 2px;
 
+    cursor: pointer;
+
 }
 
 .nombre{
@@ -118,12 +140,18 @@
 
     padding-right: 8px;
 
-    display: inline;
+    display:inline;
 
     border-top-right-radius: 3px;
 
     border-bottom-right-radius: 3px;
 
+    transition: all 1s;
+
+}
+
+.nombre:hover{
+    background-color: hsl(116, 50%, 23%);
 }
 
 Link {
@@ -144,7 +172,7 @@ Link {
 
     margin-bottom: 7px;
 
-    font-family: 'Poppins' sans-serif;;
+    font-family: 'Poppins' sans-serif;
 
     color: rgb(217, 217, 217);
 

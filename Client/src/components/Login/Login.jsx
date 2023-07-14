@@ -33,35 +33,38 @@ export default function Login({ingresar}) {
   }
   
   return (
-    <div className={style.login}>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="email">EMAIL</label>
-          <input 
-            type="email"
-            name="email"
-            placeholder='Enter your email'
-            value={userData.email}
-            onChange={handleChange}
-          />
-          <div className={style.error}>{errors.email && <span>{errors.email}</span>}</div>
-        </div>
+    <div className={style.container}>
+      <div className={style.login}>
+        <form onSubmit={handleSubmit}>
+          <div>
+            <label htmlFor="email">EMAIL</label>
+            <input 
+              type="email"
+              name="email"
+              placeholder='Enter your email'
+              value={userData.email}
+              onChange={handleChange}
+            />
+            <div className={style.error}>{errors.email && <span>{errors.email}</span>}</div>
+          </div>
 
-        <div>
-          <label htmlFor="password">PASSWORD</label>
-          <input 
-            type='password'
-            name='password'
-            placeholder='Enter your password'
-            value={userData.password}
-            onChange={handleChange}
-          />
-          <div className={style.error}>{errors.password && <span>{errors.password}</span>}</div>
-          
-        </div>
+          <div>
+            <label htmlFor="password">PASSWORD</label>
+            <input 
+              type='password'
+              name='password'
+              placeholder='Enter your password'
+              value={userData.password}
+              onChange={handleChange}
+            />
+            <div className={style.error}>{errors.password && <span>{errors.password}</span>}</div>
+            
+          </div>
 
-        <button className={style.boton} disabled={!userData.email || !userData.password || errors.email || errors.password}>SUBMIT</button>
-      </form>
+          <button className={style.boton} disabled={!userData.email || !userData.password || errors.email || errors.password}>SUBMIT</button>
+        </form>
+      </div>
+      <div className={style.blob} ></div>
     </div>
   )
 }

@@ -1,0 +1,43 @@
+.favPage {
+    display: block;
+}
+
+.favPage select{
+    display: flex;
+    align-self: center;
+    padding: 5px;
+    margin: 5px;
+    /* border: transparent; */
+    background-color: hsl(218, 11%, 14%);
+    opacity: 100%;
+    color: hsl(220, 7%, 91%);
+
+}
+
+.favPage select option {
+    /* color: hsl(220, 7%, 91%);
+    opacity: 30%; */
+    background-color: transparent;
+    border: transparent;
+}
+
+
+.favPage select:focus {
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 5px rgba(158, 202, 237, 0.8);
+}
+  
+.favPage select:hover {
+    border-color: #9ecaed;
+}
+  
+.favPage select:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.selectContainer{
+    display: flex;
+    justify-content:center;
+}

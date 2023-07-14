@@ -1,14 +1,31 @@
 .material-icons {
+    font-family: 'Material Icons';
     color: hsl(220, 7%, 91%);
-    /* opacity: 50%; */
-    font-size: 22px;
     opacity: 50%;
-    margin: 3px;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
 }
 
 #clsBut .material-icons {
-    font-size: 20px;
-    color: rgb(0, 0, 0);
+    font-family: 'Material Icons';
+    font-size: 24px;
+    color: rgb(17, 17, 17);
     opacity: 90%;
-    font-weight: 900;
+    font-weight:600;
+    font-style: normal;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
 }

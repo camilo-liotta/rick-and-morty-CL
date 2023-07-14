@@ -1,7 +1,7 @@
 import style from './SearchBar.module.css';
 import { useState } from 'react';
 
-export default function SearchBar({onSearch, addRandom, ramlogo, buttonimg}) {
+export default function SearchBar({onSearch, addRandom}) {
    
    const [id, setId] = useState('');
 
@@ -22,11 +22,11 @@ export default function SearchBar({onSearch, addRandom, ramlogo, buttonimg}) {
    
    return (
       <div className={style.SearchBar}>
-               <input type='search' className={style.buscar} onChange={handleChange} value={id} onKeyPress={handleKeyPress} placeholder='   Search by id'/>
+               <input type='search' className={style.buscar} onChange={handleChange} value={id} onKeyPress={handleKeyPress} placeholder='Search by id'/>
                <button className={style.botones} onClick={() => {onSearch(id); setId('')}}>
                   <i className="material-icons" >search</i>
                </button>
-            <button className={style.botones} id={style.random} onClick={addRandom}>
+            <button id={style.random} onClick={addRandom}>
                <span>Random</span>
             </button>
       </div>

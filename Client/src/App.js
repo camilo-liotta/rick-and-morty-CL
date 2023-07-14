@@ -4,7 +4,6 @@ import Nav from './components/Nav/Nav.jsx'
 import {useEffect, useState} from 'react';
 import axios from 'axios';
 import ramlogo from './assets/ram-logo.png';
-import buttonimg from './assets/buttonimg.jpg';
 import About from './components/About/About';
 import Login from './components/Login/Login';
 import Details from './components/Details/Details';
@@ -40,9 +39,9 @@ function App() {
    }, [access]);
 
    const onSearch = async (id) => {
-      const repeated = characters.filter( character =>  character.id === +id );
+      const repeated = characters.find( character =>  character.id == id );
          
-      if (repeated.length !== 0) {
+      if (repeated) {
          
          if(characters.length === 826) {
             alert('Ya estan todos los personajes!');
@@ -84,10 +83,12 @@ function App() {
       
          }
    
-         axios(`https://rickandmortyapi.com/api/character/${id}`)
-         .then(({ data }) => {
-            setCharacters((oldChars) => [...oldChars, data]);
-         });
+         // axios(`https://rickandmortyapi.com/api/character/${id}`)
+         // .then(({ data }) => {
+         //    setCharacters((oldChars) => [...oldChars, data]);
+         // });
+
+         onSearch(id);
 
       }
 
@@ -108,7 +109,7 @@ function App() {
       <div className={style.App}>
 
          {
-            pathname === "/" ? null : <Nav onSearch={onSearch} addRandom={addRandom} ramlogo={ramlogo} buttonimg={buttonimg}/> 
+            pathname === "/" ? null : <Nav onSearch={onSearch} addRandom={addRandom} ramlogo={ramlogo}/> 
          }
          
          <Routes>
